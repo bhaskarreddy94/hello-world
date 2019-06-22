@@ -1,0 +1,16 @@
+<table>
+  <tr >
+    <th>ALBUMID</th>
+    <th>TITLE</th>
+    <th>IMAGE</th>
+    
+    
+  </tr>
+<tr *ngFor="let image of photos">
+  <td>{{image.id}}</td>
+  <td>{{image.title}}</td>
+  <td><img [src]="image.url"></td>
+  
+ 
+</tr>
+</table>

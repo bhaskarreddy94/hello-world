@@ -3,5 +3,9 @@ table, th, td {
   }
   table {
     border-collapse: collapse;
-    width: 100%;
+  widows: 80%
   }
+  img {
+    border-radius: 50%;
+    width: 10%;
+}
