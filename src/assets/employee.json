@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1165",
+		"employee_name": "Dheeraj",
+		"employee_salary": "80000",
+		"employee_age": "45",
+		"profile_image": "./assets/favicon.ico",
+		"edit_icon": "./assets/edit-flat.png"
+	},
+	{
+		"id": "1168",
+		"employee_name": "Kevin 30-05-19 09:06:53",
+		"employee_salary": "123",
+		"employee_age": "23",
+		"profile_image": "./assets/favicon.ico",
+		"edit_icon": "./assets/edit-flat.png"
+	},
+	{
+		"id": "1169",
+		"employee_name": "Kevin 30-05-19 09:07:53",
+		"employee_salary": "123",
+		"employee_age": "23",
+		"profile_image": "./assets/favicon.ico",
+		"edit_icon": "./assets/edit-flat.png"
+	}
+]

@@ -1,0 +1,30 @@
+<div class="container" style="margin-top: 25px">
+    <!-- <app-create-user></app-create-user> -->
+    <a routerLink="/employee" routerLinkActive="active">Heroes</a>
+</div>
+
+<div *ngIf="enable">
+    <table class="table table-striped">
+        <tr>
+            <th> EMPLOYEE_ID</th>
+            <th> EMPLOYEE_NAME</th>
+            <th> EMPLOYEE_AGE</th>
+            <th> EMPLOYEE_SALARY</th>
+            <th> EMPLOYEE-PROFILE </th>
+            <th> EDIT</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let employee of listOfEmployeies">
+                <td>{{employee.id}}</td>
+                <td>{{employee.employee_name}}</td>
+                <td>{{employee.employee_age}}</td>
+                <td>{{employee.employee_salary}}</td>
+                <td> <img [src]="employee.profile_image" class="img-circle" alt="Cinque Terre" width="20" height="20" />
+                </td>
+                <td><img [src]="employee.edit_icon" class="img-circle" alt="Cinque Terre" width="20" height="20" (click)="gotoEmployeeEdit(employee)" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div> <img [src]="edit_icon" class="img-circle" alt="Cinque Terre" width="20" height="20" placement="right"  [tooltip]="'good morning this bhaskar reddydydydydyddydydy'"/></div>
+<router-outlet></router-outlet>
