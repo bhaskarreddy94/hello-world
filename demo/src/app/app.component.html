@@ -9,17 +9,42 @@
 </nav>
 <table>
   <tr >
-    <th>NAME</th>
+    <th>id</th>
     <th>USERNAME</th>
-    <th>EMAIL</th>
-    <th>ADDRESS </th>
-    
+    <th>age</th>
+    <th>active </th>
+    <th> edit</th>
+    <th>delete</th>
   </tr>
 <tr *ngFor="let user of users">
+  <td>{{user.id}}</td>
   <td>{{user.name}}</td>
-  <td>{{user.username}}</td>
-  <td>{{user.email}}</td>
-  <td>{{user.address.street}}</td>
+  <td>{{user.age}}</td>
+  <td>{{user.active}}</td>
+<td><img [src]="editimage"  id="edit" (click)="edit(user)"></td>
+<td><img [src]="deleteicon" (click)="delete(user)"></td>
 </tr>
+
 </table>
+<form [formGroup]="user"  (ngSubmit)="onSubmit()">
+<table>
+  <tr>
+    
+    
+     <td> <input type="text" formControlName="id" placeholder="id auto genater"></td>
+       
+        <td> <input type="text" formControlName="name" placeholder="please enter name"></td>
+    
+      
+       
+        <td> <input type="text" formControlName="age" placeholder="please enter age"></td>
+      
+       
+        <td> <input type="text" formControlName="active" placeholder="please enter active"></td>
+       <td><button type="submit"> save</button></td>
+      
+    
+  </tr>
+</table>
+</form>
 <router-outlet></router-outlet>

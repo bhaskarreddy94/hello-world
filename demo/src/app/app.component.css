@@ -1,7 +1,16 @@
 table, th, td {
-    border:  1px  dashed black;
+  table-layout: auto;
+    border:  1px  double black;
   }
   table {
+    table-layout: auto;
     border-collapse: collapse;
     width: 100%;
   }
+  img{
+    border-radius: 50%;
+    width: 20%
+  }
+  #edit {
+    border-radius: 50%;
+    padding: 40%}
